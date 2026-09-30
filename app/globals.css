@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+:root {
+  --ink: #171225;
+  --muted: #6d6780;
+  --lavender: #8b5cf6;
+  --violet: #6d28d9;
+  --blue: #4f7cff;
+  --cream: #fbf9ff;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background:
+    radial-gradient(circle at 10% 0%, rgba(139, 92, 246, 0.12), transparent 34%),
+    radial-gradient(circle at 90% 0%, rgba(79, 124, 255, 0.12), transparent 30%),
+    var(--cream);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+::selection {
+  background: rgba(139, 92, 246, 0.22);
+}
+
+.page-grid {
+  background-image:
+    linear-gradient(rgba(109, 40, 217, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(79, 124, 255, 0.035) 1px, transparent 1px);
+  background-size: 28px 28px;
+}
+
+.glass {
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(18px);
+  -webkit-backdrop-filter: blur(18px);
+  border: 1px solid rgba(139, 92, 246, 0.1);
+  box-shadow: 0 20px 50px rgba(57, 36, 101, 0.07);
+}
+
+.text-gradient {
+  background: linear-gradient(120deg, #6d28d9 0%, #8b5cf6 45%, #4f7cff 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.soft-shadow {
+  box-shadow: 0 18px 50px rgba(70, 46, 122, 0.09);
+}
+
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
+input,
+textarea,
+select,
+button {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+}
