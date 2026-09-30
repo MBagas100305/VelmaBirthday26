@@ -31,7 +31,7 @@ type Countdown = {
   seconds: number;
 };
 
-const EVENT_DATE = process.env.NEXT_PUBLIC_EVENT_DATE || "2026-12-31T19:00:00+07:00";
+const EVENT_DATE = process.env.NEXT_PUBLIC_EVENT_DATE || "2026-10-02T00:00:01+07:00";
 const STORAGE_KEY = "velma-birthday-wishes-v1";
 
 const itinerary = {
